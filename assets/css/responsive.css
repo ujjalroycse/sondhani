@@ -1,0 +1,248 @@
+
+
+/* @media all and (min-width: 1400px){
+   
+} */
+
+@media all and (max-width: 1399.98px) {
+    
+}
+
+
+  /* Medium Device = 1200px */
+@media all and (max-width: 1199.98px) {
+   
+    .images img{
+        height: 60vh;
+      }
+    
+}
+/* @media all and (min-width: 992px){
+    
+} */
+
+
+@media all and (max-width: 991.98px) {
+   
+    .images img{
+        height: auto;
+      }
+
+    .activities-xtra-image-class img {
+        height: 350px;
+    }
+}
+@media all and (max-width:767.98px){
+    .logo-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-area{
+        display: none !important;
+    }
+    .show {
+        margin-right: 20px;
+        display: block;
+    }
+    .show i {
+        font-size: 25px;
+        padding: 20px;
+        width: 45px;
+        height: 42px;
+        display: inline-block;
+        background: var(--color03);
+        border-radius: 5px;
+        color: var(--color04);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu ul li a:hover,
+    .menu ul li.active a{
+        background: none;
+    }
+    .menu ul li:hover > ul{
+        top: 50%;
+        /* visibility: hidden; */
+        opacity: 1;
+        border-radius: 5px;
+    }
+    .menus {
+        position: absolute;
+        top: 80px;
+        right: -10%;
+        z-index: 99999;
+        width: 0px;
+        height: auto;
+        text-align: left;
+        background: var(--color01);
+        border-bottom: none;
+        transition: 0.5s;
+        overflow: hidden;
+        box-shadow: 0 5px 20px var(--color02);
+        border-radius: 4px 0 0 4px;
+    }
+    .menu ul ul {
+	display: block;
+	position: static;
+	width: 200px;
+	top: 100px;
+	left: 0;
+	 visibility: visible; 
+	 opacity: 1; 
+	transition: 0.3s;
+	z-index: 9999;
+    background: inherit;
+    box-shadow: none;
+    margin-left: 20px;
+    }
+    .menu ul ul li a {
+	color: var(--color04);
+    }
+    .menus.open{
+        width: 240px;
+        right: 0;
+    }
+    #stickyNavber.sticky {
+	position: static;
+    }
+
+    .about-area-right {
+        padding: 0;
+    }
+
+    .activities-content-area {
+        width: 85%;
+    }
+
+    .activities-xtra-image-class img {
+        height: 290px;
+    }
+    .activities-main-content .author-details a ,
+    .activities-footer span {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width:575px){
+
+    .container, .container-md, .container-sm {
+        width: 95%;
+        
+        }
+    .row{
+        gap: 0 !important;
+    }
+    
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .logo img {
+        width: 200px;
+      }
+      .menus{
+        top: 70px;
+    }
+
+    .extra-about-style {
+        width: 85%;
+    }
+
+    .activities-main-content img {
+        height: 255px;
+    }
+
+    .team-member h5 {
+        margin-bottom: 15px;
+    }
+
+    .google-map-area {
+        margin-top: 45px;
+    }
+
+    .footer-btn {
+        font-size: 16px;
+    }
+
+    .material-scrolltop.reveal {
+        width: 48px;
+        height: 48px;
+    }
+
+    .activities-content-area {
+        width: 90%;
+    }
+
+    .blood-grouping-title h3 {
+        font-size: 30px;
+    }
+    .blood-grouping-description p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .bg-left-content p {
+        font-size: 25px;
+    }
+    .blood-donating-details h2 {
+        font-size: 30px;
+    }
+
+    .bd-left-content h2, .bd-right-content h2 {
+        margin: 15px 0 35px;
+    }
+
+    .w-50 {
+        width: 100% !important;
+    }
+    .blood-donate-card {
+        margin: 30px !important;
+    }
+
+    .footer-notice p {
+        font-size: 15px;
+    }
+    .copyright-text p {
+        font-size: 13px;
+    }
+
+}
+
+@media all and (max-width:450px){
+
+    .blood-grouping-title h3,
+    .blood-donating-details h2 {
+        font-size: 25px;
+    }
+    .bd-left-content h2, .bd-right-content h2 {
+        font-size: 20px;
+    }
+    .blood-donating-details p {
+        font-size: 18px;
+    }
+    .blood-donate-card {
+        padding: 20px 5px;
+    }
+    .drug-note p {
+        font-size: 19px;
+    }
+
+    .m-5 {
+        margin: 1rem !important;
+    }
+
+    .form-button{
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+    .form-button input{
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+}

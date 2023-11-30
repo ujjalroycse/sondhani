@@ -1,0 +1,831 @@
+/*
+Template Name: Shandhani
+Template URI: https://shandhanirangpur.com
+Author: Coder IT Solution
+Author URI: 
+
+Table of Content: 
+1.
+2.
+3.
+4.
+5.
+*/
+
+
+:root{
+  --color01: #6b6c85;
+  --color02: #000000;
+  --color03: #FF0015;
+  --color04: #ffffff;
+  --color05: #484848;
+}
+
+
+body{
+  font-family: 'Noto Serif Bengali', serif;
+  
+}
+
+p{
+  font-size: 16px;
+  color: var(--color01);
+  font-weight: 400;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+h5{
+  font-size: 15px;
+}
+.section-padding{
+  padding: 70px 0;
+}
+img{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.material-scrolltop {
+  background-color: var(--color03);
+  z-index: 99999;
+}
+.material-scrolltop:hover {
+  background-color: var(--color02);
+}
+.material-scrolltop i{
+  font-size: 20px;
+  color: var(--color04);
+}
+  /*****************************/
+ /******* 1. Header Area ******/
+/*****************************/
+
+
+.social-area{
+  text-align: right;
+}
+.social-item-1{
+  margin-left: 20px;
+}
+.social-item-1 a{
+  color: var(--color01);
+  transition: 0.3s all ease-in-out;
+}
+.social-item-1 a:hover{
+  color: var(--color03);
+}
+.logo img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+ .header-second-area{
+  background: var(--color01);
+ }
+.menus{
+  border-top: 2px solid rgba(138, 133, 133, 0.2);
+  border-bottom: 4px solid var(--color03);
+}
+.menu ul{
+  display: flex;
+    list-style: none;
+}
+.menu ul li{
+    position: relative;
+    border-right: 3px solid rgba(138, 133, 133, 0.2);
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+    color: var(--color04);
+}
+.menu ul li:last-child{
+  border-right: none;
+}
+.menu ul li a:hover,
+.menu ul li.active> a{
+    color: red;
+    background: var(--color04);
+} 
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show{
+  display: none;
+}
+.menu-icon a{
+  display: inline-block;
+  padding: 5px 12px 3px;
+  border-radius: 4px;
+  font-size: 22px;
+  background-color: var(--color03);
+  color: var(--color04);
+}
+
+#stickyNavber.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--color01);
+	width: 100%;
+	z-index: 9999999;
+  transition: 0.2s ;
+}
+/* dropdown menu css */
+.menu ul ul{
+  display: block;
+    position: absolute;
+    width: 200px;
+    background: var(--color04);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    top: 100px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 9999;
+}
+.menu ul ul li{
+    float: none;
+}
+
+.menu ul ul li a{
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--color01);
+}
+.menu ul li:hover > ul{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+    border-radius: 5px;
+} 
+
+/*****************************/
+ /******* Owl Carousole *******/
+/*****************************/
+
+#main-images-file {
+  box-shadow: 0px 0px 30px 0px #3c2761;
+}
+.images img{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  z-index: -111;
+}
+#main-images-file .owl-prev,
+#main-images-file .owl-next{
+  background: transparent;
+  background: #9486c378;
+  color: var(--color01);
+  border-radius: 50%;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  transition: 0.5s all ease-in-out;
+  
+}
+#main-images-file .owl-prev{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translatey(-50%),scale(1.1);
+}
+#main-images-file .owl-next{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translatey(-50%),scale(1.1);
+}
+#main-images-file .owl-prev:hover,
+#main-images-file .owl-next:hover{
+  background: blueviolet;
+  color: #fff;
+  transform: scale(1.1);
+}
+#main-images-file .owl-dots .owl-dot span{
+  background: transparent;
+  background: rgb(109, 91, 122);
+}
+#main-images-file .owl-dots .owl-dot.active span,
+#main-images-file .owl-dots .owl-dot:hover span{
+  background: #04ff64;
+}
+
+  /*****************************/
+ /******* About section *******/
+/*****************************/
+.about-section{
+  padding: 50px 0;
+}
+.extra-about-style{
+  width: 80%;
+}
+.about-area-left h3{
+  color: #38386a;
+  padding-bottom: 20px;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+.about-area-left img{
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+.about-area-right {
+  /* width: 80%; */
+  padding: 0 40px;
+  text-align: center;
+  padding-top: 35px;
+}
+.about-area-right p{
+  line-height: 35px;
+  text-align: justify;
+}
+.about-area-right a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 20px;
+  background: rgb(212, 97, 97);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+  /*****************************/
+ /***** Activities Section ****/
+/*****************************/
+
+.activities-content-area{
+  width: 80%;
+  margin: auto;
+}
+.activities-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.activities-footer span{
+  color: var(--color05);
+  font-size: 14px;
+}
+.activities-footer a{
+  color: var(--color03);
+  font-size: 15px;
+  font-weight: 300;
+}
+.activities-main-content img{
+  width: 100%;
+  height: 320px;
+  border-radius: 7px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 15px;
+}
+.activities-xtra-image-class {
+  margin-bottom: 20px;
+}
+.activities-xtra-image-class img{
+  height: 400px;
+  margin: 20px 0;
+}
+.activities-main-content h3{
+  color: var(--color05);
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.author-details {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.activities-main-content p{
+  padding: 20px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.activities-main-content .author-details a{
+  color: var(--color01);
+  font-size: 14px;
+  margin-right: 15px;
+  font-weight: 300;
+}
+.extra-activites-class{
+  width: 90% !important;
+}
+.extra-activites-class h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*** Shandhani section details ***/
+
+.shandhani-details-content h2 {
+	background-color: var(--color03);
+	text-align: center;
+	padding: 11px 0px;
+	color: var(--color04);
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px var(--color03);
+	border-radius: 10px;
+}
+.shandhani-details-content p{
+  text-align: justify;
+}
+
+.single-xtra-image-class img{
+  height: auto !important;
+}
+
+/*********************************/
+ /******** Gallary Area ********/
+/*****************************/
+.gallary-area .section-padding {
+	padding-top: 0;
+}
+.gallary-items{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.gallary-items .images img{
+  width: 100%;
+  height: 150px;
+}
+.gallary-items h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+  /*****************************/
+ /******* Team Member Area *******/
+/*****************************/
+.row.team-members {
+  width: 80%;
+  margin: auto;
+}
+.team-members h3{
+  display: block;
+  text-align: center;
+  color: var(--color02);
+  position: relative;
+  margin-bottom: 30px;
+}
+.team-members h3::after{
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 10%;
+  background: var(--color01);
+  top: 105%;
+  left: 42.5%;
+  
+}
+.team-members h3::before{
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background: var(--color03);
+  top: 130%;
+  left: 45%;
+}
+.second-heading{
+  display: block;
+  text-align: center;
+  color: var(--color02);
+  position: relative;
+  margin-bottom: 30px;
+}
+.second-heading h3::after{
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  background: var(--color01);
+  top: 105%;
+  left: 35%;
+  
+}
+.second-heading h3::before{
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  background: var(--color03);
+  top: 130%;
+  left: 40%;
+}
+.team-member {
+  text-align: center;
+}
+.team-member img{
+  display: block;
+  width: 110px;
+  height: 130px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.team-member h5{
+  color: var(--color02);
+  line-height: 25px;
+}
+.second-heading h3{
+  margin-top: 30px;
+}
+
+  /*****************************/
+ /**** Blood Grouping Area ****/
+/*****************************/
+.blood-grouping-title {
+	margin-bottom: 65px;
+}
+.blood-grouping-title h3{
+  color: red;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.blood-grouping-title h3::after {
+	position: absolute;
+	content: "";
+	height: 3px;
+	width: 20%;
+	color: var(--color05);
+	bottom: -14px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background: var(--color05);
+	margin: 0px auto;
+}
+.blood-grouping-title h3::before {
+	position: absolute;
+	content: "";
+	height: 3px;
+	width: 12%;
+	color: var(--color03);
+	bottom: -25px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background: var(--color03);
+	margin: 0px auto;
+}
+.blood-grouping-description p {
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 26px;
+	word-spacing: 4px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.blood-grouping-content {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.bg-left-content p {
+	font-size: 30px;
+	font-weight: 700;
+	font-style: italic;
+}
+.bg-right-content img {
+	height: auto;
+	width: 100%;
+}
+
+  /*****************************/
+ /**** Blood Donating Area ****/
+/*****************************/
+
+.blood-donation-description p {
+	font-size: 17px;
+	font-style: italic;
+	letter-spacing: .5px;
+	word-spacing: 1px;
+}
+.bd-left-content h2, .bd-right-content h2{
+  color: var(--color02);
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  margin: 35px 0;
+}
+.bd-left-content h2::after, .bd-right-content h2::after{
+  position: absolute;
+	content: "";
+	height: 3px;
+	width: 20%;
+	color: var(--color03);
+	bottom: -14px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background: var(--color03);
+	margin: 0px auto;
+}
+.bd-left-content, .bd-right-content {
+	max-width: 84%;
+	margin: 0 auto;
+}
+.bd-left-content p, .bd-right-content p {
+	font-size: 17px;
+	color: var(--color01);
+	font-weight: 400;
+	line-height: 24px;
+  margin-bottom: 30px;
+}
+.bd-right-content-image img {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+.blood-donating-details h2 {
+	text-align: center;
+	margin-bottom: 35px;
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--color03);
+}
+.blood-donating-details p {
+	font-size: 20px;
+	color: var(--color01);
+	font-weight: 400;
+}
+
+
+
+  /*****************************/
+ /***** Vaccination Area ******/
+/*****************************/
+.vaccination-main p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: .5px;
+}
+.vaccination-main img, .vaccination-content img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+.vaccination-content h3 {
+	font-size: 22px;
+	line-height: 33px;
+  font-weight: 600;
+}
+.vaccination-note h2 {
+	text-align: center;
+	color: var(--color03);
+}
+.vaccination-content li {
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--color02);
+}
+
+  /*****************************/
+ /**** Eye Donation Area ******/
+/*****************************/
+.eye-donation-title h3{
+  font-size: 30px;
+  text-align: center;
+  color: var(--color03);
+  font-weight: 500;
+}
+.eye-donate-desc{
+  margin-bottom: 30px;
+}
+.eye-donate-desc p, .eye-donate-desc ul li {
+	font-size: 18px;
+	font-weight: 400;
+	word-spacing: 3px;
+}
+.eye-donate-desc iframe {
+	height: 70vh;
+	width: 70%;
+	margin-bottom: 60px;
+}
+.soudi-donation h3{
+  /* font-size: 25px; */
+  text-align: left;
+}
+.donate-btn {
+	background-color: var(--color05);
+	color: var(--color04);
+	padding: 20px 65px;
+	border-radius: 10px;
+  transition: 0.3s;
+}
+.donate-btn:hover {
+	background-color: var(--color01);
+	color: var(--color04);
+}
+.btn-2{
+  background-color: var(--color05);
+  transition: 0.3s;
+}
+.ed-help h3{
+  text-align: left;
+}
+  /*****************************/
+ /******** Durg Area ********/
+/*****************************/
+.drug-note p{
+  font-size: 23px;
+}
+.drug-image img{
+  border-radius: 10px;
+}
+
+ /*****************************/
+ /******** Google Maps Area ********/
+/*****************************/
+.google-map-area{
+  margin-top: 70px;
+}
+.google-map-area-items{
+  text-align: center;
+}
+.google-map-area-items p{
+  margin-bottom: 40px;
+}
+.sondhani-map{
+  margin-bottom: 30px;
+}
+
+
+
+  /*****************************/
+ /******** Card Section ********/
+/*****************************/
+
+.card-area {
+	box-shadow: 0 5px 15px var(--color01);
+	border-radius: 10px;
+	padding: 35px 25px;
+	margin-bottom: 28px;
+	height: 340px;
+}
+.card-area img {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	margin: auto;
+  box-shadow: 0 0 8px var(--color01);
+}
+.card-area h3 {
+  margin: 15px 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color05);
+}
+.card-area h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color05);
+  margin-bottom: 15px;
+}
+.card-social{
+  padding: 0 10px;
+}
+.card-social a{
+  font-size: 14px;
+  color: var(--color01);
+  transition: 0.3s;
+}
+.card-social a i{
+  font-size: 18px;
+}
+.card-social a:hover{
+  color: var(--color03);
+}
+
+  /*****************************/
+ /******** Form Section Area ********/
+/*****************************/
+
+/* form css */
+.container-form{
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
+.blood-donate-card{
+  border-radius: 10px;
+  padding: 20px;
+  background: #8dbedb30;
+
+}
+.border-color{
+  border-top: 15px solid var(--color03);
+}
+label{
+  font-size: 18px;
+}
+label span{
+  color: var(--color03);
+}
+
+.form-input{
+  border: none;
+ padding: 8px 20px;
+ border-radius: 10px;
+}
+.form-input:focus{
+  outline: none;
+  border-bottom: 2px solid var(--color01);
+}
+.form-input::placeholder{
+  font-size: 16px;
+}
+.form-check-input:checked{
+  background: var(--color01);
+  border: var(--color01);
+}
+.submit-btn{
+  background: var(--color05);
+  color: var(--color04);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.reset-btn{
+  background: var(--color03);
+  color: var(--color04);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.form-button input{
+  margin-right: 10px;
+}
+
+  /*****************************/
+ /******** Footer Area ********/
+/*****************************/
+.footer-area{
+  padding: 40px 0 10px;
+  background-color: #374463;
+}
+.footer-content{
+  text-align: center;
+  
+}
+.footer-notice p{
+  color: var(--color04);
+  margin-bottom: 20px;
+}
+.footer-notice p span{
+  color: #38e043;
+}
+.footer-notice p a,
+.copyright-text p a{
+  color: var(--color03);
+  font-weight: 700;
+}
+.footer-btn{
+  display: inline-block;
+  color: var(--color04);
+  background-color: var(--color03);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.5s all ease;
+  font-size: 18px;
+}
+.footer-btn:hover{
+  color: var(--color04);
+  background-color: #c22424;
+}
+.copyright-text{
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.copyright-text p{
+  color: var(--color04);
+  font-size: 15px;
+}
